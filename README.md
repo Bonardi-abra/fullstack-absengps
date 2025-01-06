@@ -1,66 +1,59 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+bahan yang diperlukan
+1. composer
+2. Laravel
+3. xampp 8.2.4 (include PHP 8.2.12 dan MySQL)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+untuk gunakan project ini
+1. clone git atau download dengan zipper
+2. kemudian extract zipper nya sampai selesai
+3. kemudian salin folder flie fullstack-absengps ke folder C:\xampp\htdocs atau (sesuaikan jalur xampp/htdocs)
+4. buka folder tsb di vscode
+5. buka terminal yang ada divscode kemudian ketik perintah "composer install"
+6. apabila sudah terinstall composer dan Laravel sebelumnya running Laravel pastikan buka http://localhost/phpmyadmin/ dan +baru dengan absensi_gps dan Ekspor yang ada di folder database (MySQL) dan untuk .env.example silahkan di rubah ke .env
+7. setelah berubah .env nya silahkan DB_DATABASE=laravel menjadi DB_DATABASE=absensi_gps
+8. setelah poin 6 dan 7 selanjutnya running dengan php artisan serve
+9. kemudian akses http://localhost:8080
+10. untuk akses mengunakan nik : 12345 dan password : 2222
 
-## About Laravel
+sisi user
+untuk absensi
+1. klik logo kamera di halaman dashboard
+2. pastikan webcam dan maps sudah muncul di bagian absensi
+3. kemudian klik (absen masuk) dan kembali ke halaman dashboard (untuk memastikan bahwa jam nya sudah muncul sesuai telah absensi masuk)
+*untuk absen pulang
+1. klik logo kamera di halaman dashboard
+2. pastikan webcam dan maps sudah muncul di bagian absensi
+3. kemudian klik (absen pulang) dan kembali ke halaman dashboard (untuk memastikan bahwa jam nya sudah muncul sesuai telah absensi pulang)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+untuk check histori absensi
+1. klik "histori"
+2. klik "bulan" dan "tahun" (untuk pencarian dasarkan bulan presensi nya)
+3. klik "cari data" dan muncul data yang pencarian presensi telah tentukan sebelumnya
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+untuk izin/sakit
+1. klik "izin"
+2. klik "+" (untuk pencarian dasarkan bulan presensi nya)
+3. selanjutnya kilik tanggal dan klik alasan nya "izin"/"sakit"
+4. kemudian ketik alasan nya yang ada di kolom keterangan
+5. klik "kirim"
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+*setelah mengisi form izin/sakit bisa mengcheck status nya "menunggu", "disetujui", dan "ditolak"
 
-## Learning Laravel
+untuk profile
+.) bisa mengrubah nomor hp, alamat dan password
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+sisi admin/sisi hrd
+untuk akses halaman admin : http://127.0.0.1:8000/panel
+login dengan bsigalingging9@gmail.com
+password : 1012
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. setujui/ditolak status izin/sakit oleh staf
+.) klik data izin/sakit
+.) klik "aksi" salah satu permohon izin/sakit yang diajukan oleh staf
+.) klik "disetujui" (untuk disetujui) / "ditolak" (untuk tolak) kemudian kilik submit yang dilakukan oleh admin/hrd
+2. ketahui data karyawan
+.) klik data master
+.) klik data karyawan
+3. kilik Monitoring Presensi untuk ketahui sudah/belum lakukan absensi oleh user/staf
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-======================================================================================================================================================================================
